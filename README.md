@@ -1,4 +1,4 @@
-# Twitter'dan Bluesky'ye Otomatik Paylaşım
+# Twitter'dan Bluesky'a Otomatik Paylaşım
 
 Bu script, Twitter hesabınızdaki yeni tweet'leri otomatik olarak Bluesky hesabınıza aktarır.
 
