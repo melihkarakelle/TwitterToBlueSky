@@ -24,10 +24,10 @@ Script'i düzenli olarak çalıştırmak için crontab'a ekleyin:
 crontab -e
 ```
 
-Aşağıdaki satırı ekleyin (örneğin her 5 dakikada bir çalıştırmak için):
+Aşağıdaki satırı ekleyin (örneğin her 30 dakikada bir çalıştırmak için):
 
 ```
-*/5 * * * * cd /root/python/Bluesky && /usr/bin/python3 twitter_to_bluesky.py >> /root/python/Bluesky/cron.log 2>&1
+*/30 * * * * cd /root/python/Bluesky && /usr/bin/python3 twitter_to_bluesky.py >> /root/python/Bluesky/cron.log 2>&1
 ```
 
 ## Önemli Notlar
