@@ -147,7 +147,10 @@ def get_new_tweets(client, last_tweet_id):
                         }
                         
                         # Tweet'te medya varsa URL'lerini ekle
-                        if hasattr(tweet, 'attachments') and 'media_keys' in tweet.attachments:
+                        if (hasattr(tweet, 'attachments') and 
+                            tweet.attachments is not None and 
+                            'media_keys' in tweet.attachments and 
+                            tweet.attachments['media_keys'] is not None):
                             for media_key in tweet.attachments['media_keys']:
                                 if media_key in media_dict:
                                     tweet_data['media_urls'].append(media_dict[media_key])
